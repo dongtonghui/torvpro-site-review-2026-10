@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>07 · 生成式 AI 渠道</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tokens.css">
+<script src="../shared/lock.js"></script>
+<style>
+  .ai-src { display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line); }
+  .ai-src .s { font-family: var(--font-mono); font-size:16px; color:var(--ink); }
+  .ai-src .v { font-family: var(--font-mono); font-size:16px; color:var(--safety-dark); font-weight:600; }
+  .lead-chip {
+    display:flex; gap:16px; align-items:center;
+    background: var(--white); border:1px solid var(--line-strong);
+    padding:14px 20px; margin-top:12px;
+  }
+  .lead-chip .flag { font-size:26px; }
+  .lead-chip .t { font-size:15px; color:var(--ink-soft); line-height:1.4; }
+  .lead-chip .t b { color:var(--ink); }
+</style>
+</head>
+<body>
+<div class="slide corner-brackets">
+  <div class="page-header">
+    <div class="brand">TORV<span class="dot">·</span>PRO</div>
+    <div class="meta">Generative AI Channel</div>
+  </div>
+
+  <div style="flex:1; padding-top:24px; display:flex; flex-direction:column;">
+    <div class="kicker">05 · 生成式 AI 渠道 · GA4 sessionSource 实测</div>
+    <h1 style="font-size:50px;">本站 AI 引荐暂为 0，但姊妹站已验证：AI 能直接产出询盘</h1>
+
+    <div style="display:grid; grid-template-columns: 1fr 1.15fr; gap:36px; margin-top:20px;">
+      <!-- 左：TorvPro 现状 -->
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div class="card">
+          <div class="card-tag">TorvPro 现状 · 9/30 — 10/26</div>
+          <h3 style="font-size:22px;">AI 引荐会话（GA4 可见口径）</h3>
+          <div class="num-lg num-accent" style="font-size:76px; margin-top:6px;">0</div>
+          <p style="font-size:15px; margin-top:8px;">可见会话仅 3 个（2 direct + 1 google）——Consent Mode 下英欧访客不点 Accept 不可见，<b>真实 AI 引荐未知</b>，恢复 CF Web Analytics（无 cookie）后才可度量。</p>
+        </div>
+        <div class="card">
+          <div class="card-tag orange">GEO 资产 · 已就位</div>
+          <h3 style="font-size:22px;">AI 能看到我们</h3>
+          <ul style="font-size:15px;">
+            <li>robots.txt 显式放行 28 个 AI 抓取器（GPTBot / ClaudeBot / PerplexityBot 等）</li>
+            <li>llms.txt：39 页策展索引，手写</li>
+            <li>llms-full.txt：全站 177KB 纯文本，随构建自动重出</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 右：fbkpower 对照 -->
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div class="card">
+          <div class="card-tag orange">对照 · fbkpower.com（同体系充电桩站）</div>
+          <h3 style="font-size:22px;">AI Assistant 渠道会话</h3>
+          <div class="ai-src"><span class="s">9月 · AI Assistant 渠道</span><span class="v">25 会话 · 占 6.6%</span></div>
+          <div class="ai-src"><span class="s">10月 · AI Assistant 渠道（至今）</span><span class="v">15 会话</span></div>
+          <div class="ai-src"><span class="s">chatgpt.com</span><span class="v">24</span></div>
+          <div class="ai-src"><span class="s">gemini.google.com</span><span class="v">9</span></div>
+          <div class="ai-src" style="border-bottom:none;"><span class="s">perplexity.ai</span><span class="v">9</span></div>
+        </div>
+        <div class="card">
+          <div class="card-tag orange">关键证据</div>
+          <h3 style="font-size:22px;">两个真实询盘，全部来自 ChatGPT 引荐</h3>
+          <div class="lead-chip"><span class="flag">🇧🇷</span><span class="t"><b>10/12 · 巴西</b> · chatgpt.com → 落地首页 → /quote/ 提交成功</span></div>
+          <div class="lead-chip"><span class="flag">🇹🇷</span><span class="t"><b>10/25 · 土耳其</b> · chatgpt.com → 首页 → CTA → /quote/ 提交成功（2 页完成转化）</span></div>
+          <p style="font-size:15px; margin-top:12px;">两站 GEO 做法相同（llms 三件套 + 结构化数据 + 内容密度）。结论：<b>AI 渠道不是未来时，是现在进行时</b>——TorvPro 缺的只是流量基数。</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:14px; display:flex; gap:16px; align-items:center;">
+      <div class="quote" style="padding:12px 24px; font-size:17px; flex:1;">
+        下月起把 AI 引荐列为一级追踪指标：sessionSource ∈ chatgpt.com / perplexity.ai / gemini.google.com / copilot / claude.ai；验收前提是 CF WA 恢复（否则该渠道在英欧不可见）。
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div class="section">07 / 12 · AI Channel</div>
+    <div class="pageno"><b>TORV</b> PRO · Retrospective</div>
+  </div>
+</div>
+</body>
+</html>
