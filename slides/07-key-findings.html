@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>07 · 关键结论</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tokens.css">
+<script src="../shared/lock.js"></script>
+<style>
+  .phenomenon { display: flex; align-items: baseline; gap: 18px; }
+  .phenomenon .pn { width: 46px; height: 46px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 2px solid var(--ink); font-family: var(--font-display); font-weight: 700; font-size: 24px; color: var(--ink); }
+  .phenomenon .pn.orange { border-color: var(--safety); color: var(--safety-dark); }
+  .phenomenon .pt { font-size: 28px; font-weight: 600; color: var(--ink); }
+  .phenomenon .pd { font-family: var(--font-mono); font-size: 14px; color: var(--ink-muted); margin-top: 4px; letter-spacing: 0.04em; }
+  .arrow-down { text-align: center; font-size: 34px; color: var(--safety); line-height: 1; margin: 8px 0; }
+  .root-cause {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 38px 52px;
+    position: relative;
+    border: 2px solid var(--safety);
+  }
+  .root-cause .rc-label { font-family: var(--font-mono); font-size: 15px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--safety); margin-bottom: 12px; }
+  .root-cause .rc-title { font-family: var(--font-display); font-weight: 700; font-size: 56px; line-height: 1.05; text-transform: uppercase; }
+  .root-cause .rc-sub { font-size: 21px; color: var(--ink-light); margin-top: 14px; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="slide corner-brackets">
+  <div class="page-header">
+    <div class="brand">TORV<span class="dot">·</span>PRO</div>
+    <div class="meta">Key Conclusion</div>
+  </div>
+
+  <div style="flex:1; padding-top:28px; display:flex; flex-direction:column;">
+    <div class="kicker">05 · 关键结论</div>
+    <h1 style="font-size:66px;">三个现象，指向一个结论</h1>
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:34px; margin-top:32px;">
+      <div class="card">
+        <div class="card-tag">现象一</div>
+        <div class="phenomenon" style="margin-bottom:12px;">
+          <div class="pn">1</div>
+          <div class="pt">收录畅通</div>
+        </div>
+        <div class="pd">sitemap 35 URL · 0 错误 0 警告</div>
+        <div class="num-lg" style="font-size:66px; margin-top:10px;">32</div>
+        <div class="num-label">页已获得搜索数据 · 抓取正常</div>
+      </div>
+      <div class="card">
+        <div class="card-tag">现象二</div>
+        <div class="phenomenon" style="margin-bottom:12px;">
+          <div class="pn">2</div>
+          <div class="pt">指南扛全部流量</div>
+        </div>
+        <div class="pd">曝光 Top 8 全是 learn 指南</div>
+        <div class="num-lg" style="font-size:66px; margin-top:10px;">14<span class="unit">曝光</span></div>
+        <div class="num-label">商业页最高曝光（fs-brazing-rods · 排名 30）</div>
+      </div>
+      <div class="card">
+        <div class="card-tag orange">现象三</div>
+        <div class="phenomenon" style="margin-bottom:12px;">
+          <div class="pn orange">3</div>
+          <div class="pt">高曝光零点击</div>
+        </div>
+        <div class="pd">两篇 110+ 曝光指南 0 点击</div>
+        <div class="num-lg num-accent" style="font-size:66px; margin-top:10px;">240</div>
+        <div class="num-label">零点击曝光（yellow-flame 128 + which-blowtorch 112）</div>
+      </div>
+    </div>
+
+    <div class="arrow-down">▼</div>
+
+    <div class="root-cause">
+      <div class="rc-label">Conclusion · 结论</div>
+      <div class="rc-title">内容已赢，传导未建</div>
+      <div class="rc-sub">新域名 26 天即把 12 篇指南送进首页/次页，说明选题与内容质量成立；但权重没有从指南传导到产品/合集页（商业页最高排名 30），两篇高曝光指南的摘要也没接住点击。修复路径不是更多内容，而是 CTR 整改 + 内链传导 + 外链从 0 到 1。</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div class="section">07 / 11 · Conclusion</div>
+    <div class="pageno"><b>TORV</b> PRO · Retrospective</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>06 · 询盘与度量现状</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tokens.css">
+<script src="../shared/lock.js"></script>
+<style>
+  .stat-card { text-align: left; }
+  .stat-card .num-lg { font-size: 88px; line-height: 1.14; }
+</style>
+</head>
+<body>
+<div class="slide corner-brackets">
+  <div class="page-header">
+    <div class="brand">TORV<span class="dot">·</span>PRO</div>
+    <div class="meta">Conversion & Measurement</div>
+  </div>
+
+  <div style="flex:1; padding-top:28px; display:flex; flex-direction:column;">
+    <div class="kicker">04 · 询盘与度量 · 诚实口径</div>
+    <h1 style="font-size:54px;">询盘未到是预期，度量盲区要修</h1>
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:34px; margin-top:30px;">
+      <div class="card stat-card">
+        <div class="card-tag">询盘</div>
+        <div class="num-lg">0</div>
+        <div class="num-label">上线 26 天 · 符合冷启动预期</div>
+        <p style="font-size:16px; margin-top:14px;">周曝光第 4 周才破 400、全站 10 次点击——询盘基数尚不存在。询盘链路本身已就绪：CF Pages Function + webhook / Resend 双通道，失败自动回退 mailto，<b>不丢单</b>。</p>
+      </div>
+      <div class="card stat-card">
+        <div class="card-tag orange">度量盲区</div>
+        <div class="num-lg num-accent">2</div>
+        <div class="num-label">GA4 仅记录到 2 个会话</div>
+        <p style="font-size:16px; margin-top:14px;">Consent Mode v2 默认全拒（英欧合规必需），访客不点 Accept 即不可见——GA4 数字 ≠ 真实流量。备用的 Cloudflare Web Analytics（无 cookie、免同意）自 10/04 断流，<b>需在 CF 后台对 torvpro.com 关掉再打开一次</b>恢复。</p>
+      </div>
+      <div class="card stat-card">
+        <div class="card-tag">转化埋点</div>
+        <div class="num-lg">✓</div>
+        <div class="num-label">generate_lead 已就位待触发</div>
+        <p style="font-size:16px; margin-top:14px;">thank-you 页 generate_lead（sessionStorage 防重复计数）、inquiry_submitted / inquiry_fallback_email 均已埋好；12 项端点测试常驻。流量一来，转化立即可度量。</p>
+      </div>
+    </div>
+
+    <div class="hazard-divider thin" style="margin-top:26px;"></div>
+
+    <div style="display:flex; gap:24px; align-items:center;">
+      <div class="nameplate orange">结论</div>
+      <div class="lead" style="font-size:21px;">
+        当前阶段唯一 KPI 是<b>把流量基数做大</b>；度量上唯一要补的是恢复 CF Web Analytics（无 cookie 通道），否则英欧主市场的真实会话永远看不见。
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div class="section">06 / 11 · Conversion</div>
+    <div class="pageno"><b>TORV</b> PRO · Retrospective</div>
+  </div>
+</div>
+</body>
+</html>

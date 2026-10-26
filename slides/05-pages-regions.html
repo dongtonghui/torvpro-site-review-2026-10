@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>05 · 高价值页面与地域分布</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tokens.css">
+<script src="../shared/lock.js"></script>
+<style>
+  a.pagelink {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--safety);
+    transition: color .12s;
+    font-variant-numeric: normal;
+  }
+  a.pagelink:hover { color: var(--safety-dark); }
+  .open-hint { font-family: var(--font-mono); font-size: 12px; color: var(--ink-light); letter-spacing: 0.04em; margin-bottom: 10px; }
+  .data-table td { font-size: 19px; padding: 11px 16px; }
+</style>
+</head>
+<body>
+<div class="slide corner-brackets">
+  <div class="page-header">
+    <div class="brand">TORV<span class="dot">·</span>PRO</div>
+    <div class="meta">Pages & Regions</div>
+  </div>
+
+  <div style="flex:1; padding-top:28px; display:flex; flex-direction:column;">
+    <div class="kicker">03 · 数据佐证 · 上线以来（9/30 — 10/24）</div>
+    <h1 style="font-size:54px;">指南扛流量，英国打头阵</h1>
+
+    <div style="display:grid; grid-template-columns: 1.25fr 1fr; gap:38px; margin-top:22px;">
+      <!-- 高价值页面 -->
+      <div>
+        <div class="nameplate" style="margin-bottom:10px;">TOP Pages · 可点击跳转</div>
+        <div class="open-hint">曝光 Top 8 全部是 learn 指南 · 点击路径可在新标签打开真实页面</div>
+        <table class="data-table">
+          <tr>
+            <th>页面</th>
+            <th class="num">点击</th>
+            <th class="num">曝光</th>
+            <th class="num">CTR</th>
+            <th class="num">排名</th>
+          </tr>
+          <tr><td><a class="pagelink" href="https://torvpro.com/learn/rothenberger-superfire-2-spares/" target="_blank">/learn/rothenberger-superfire-2…</a></td><td class="num">1</td><td class="num">158</td><td class="num">0.6%</td><td class="num">8.1</td></tr>
+          <tr class="hl"><td><a class="pagelink" href="https://torvpro.com/learn/how-to-clean-a-clogged-torch-nozzle/" target="_blank">/learn/how-to-clean-a-clogged…</a></td><td class="num">3</td><td class="num">155</td><td class="num">1.9%</td><td class="num">7.9</td></tr>
+          <tr><td><a class="pagelink" href="https://torvpro.com/learn/why-torch-flame-is-yellow/" target="_blank">/learn/why-torch-flame-is-yel…</a></td><td class="num">0</td><td class="num">128</td><td class="num">0%</td><td class="num">5.9</td></tr>
+          <tr class="hl"><td><a class="pagelink" href="https://torvpro.com/learn/brazing-nozzle-size-chart/" target="_blank">/learn/brazing-nozzle-size-ch…</a></td><td class="num">3</td><td class="num">112</td><td class="num">2.7%</td><td class="num">11.1</td></tr>
+          <tr><td><a class="pagelink" href="https://torvpro.com/learn/which-blowtorch-for-soldering-copper-pipe/" target="_blank">/learn/which-blowtorch-for-so…</a></td><td class="num">0</td><td class="num">112</td><td class="num">0%</td><td class="num">8.4</td></tr>
+          <tr><td><a class="pagelink" href="https://torvpro.com/learn/en417-cartridge-compatibility/" target="_blank">/learn/en417-cartridge-compat…</a></td><td class="num">1</td><td class="num">98</td><td class="num">1.0%</td><td class="num">5.6</td></tr>
+          <tr><td><a class="pagelink" href="https://torvpro.com/learn/oxy-acetylene-nozzle-numbers/" target="_blank">/learn/oxy-acetylene-nozzle-n…</a></td><td class="num">1</td><td class="num">94</td><td class="num">1.1%</td><td class="num">6.6</td></tr>
+          <tr><td><a class="pagelink" href="https://torvpro.com/learn/butane-vs-propane-torch/" target="_blank">/learn/butane-vs-propane-tor…</a></td><td class="num">0</td><td class="num">72</td><td class="num">0%</td><td class="num">16.7</td></tr>
+        </table>
+      </div>
+
+      <!-- 地域 -->
+      <div>
+        <div class="nameplate orange" style="margin-bottom:14px;">REGIONS · 目标市场命中</div>
+        <table class="data-table">
+          <tr>
+            <th>国家/地区</th>
+            <th class="num">点击</th>
+            <th class="num">曝光</th>
+            <th class="num">CTR</th>
+            <th class="num">排名</th>
+          </tr>
+          <tr class="hl"><td>🇬🇧 英国</td><td class="num">4</td><td class="num">353</td><td class="num">1.1%</td><td class="num">8.4</td></tr>
+          <tr><td>🇺🇸 美国</td><td class="num">3</td><td class="num">339</td><td class="num">0.9%</td><td class="num">11.6</td></tr>
+          <tr><td>🇨🇦 加拿大</td><td class="num">1</td><td class="num">63</td><td class="num">1.6%</td><td class="num">7.3</td></tr>
+          <tr><td>🇦🇺 澳洲</td><td class="num">1</td><td class="num">55</td><td class="num">1.8%</td><td class="num">10.1</td></tr>
+          <tr><td>🇮🇳 印度</td><td class="num">1</td><td class="num">40</td><td class="num">2.5%</td><td class="num">15.4</td></tr>
+          <tr><td>🇳🇿 新西兰</td><td class="num">0</td><td class="num">34</td><td class="num">—</td><td class="num">30.7</td></tr>
+        </table>
+        <div class="card" style="margin-top:18px; padding:20px 24px;">
+          <h3 style="font-size:20px;">🎯 关键洞察</h3>
+          <p style="font-size:16px;">英国曝光第一（353）且 CTR 过 1%——Phase 3 主攻英欧的定位被数据命中；英联邦（英/加/澳/新）合计 505 曝光，占 43%。</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:14px; display:flex; gap:16px; align-items:center;">
+      <div class="quote" style="padding:12px 24px; font-size:17px; flex:1;">
+        两篇 110+ 曝光指南（yellow-flame 排名 5.9 / which-blowtorch 排名 8.4）点击为 0——排名已到、摘要没赢，是全站最高 ROI 的单页动作（10/26 已整改）。
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div class="section">05 / 11 · Data</div>
+    <div class="pageno"><b>TORV</b> PRO · Retrospective</div>
+  </div>
+</div>
+</body>
+</html>

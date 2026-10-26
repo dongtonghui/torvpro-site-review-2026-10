@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>08 · 整改动作</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tokens.css">
+<script src="../shared/lock.js"></script>
+<style>
+  .done-badge {
+    display: inline-block;
+    background: var(--safety);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    padding: 3px 12px;
+    text-transform: uppercase;
+    margin-left: 12px;
+    vertical-align: middle;
+  }
+  .todo-badge {
+    display: inline-block;
+    border: 1.5px solid var(--ink-muted);
+    color: var(--ink-muted);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    padding: 3px 12px;
+    text-transform: uppercase;
+    margin-left: 12px;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+<div class="slide corner-brackets">
+  <div class="page-header">
+    <div class="brand">TORV<span class="dot">·</span>PRO</div>
+    <div class="meta">Response Plan</div>
+  </div>
+
+  <div style="flex:1; padding-top:26px; display:flex; flex-direction:column;">
+    <div class="kicker">06 · 应对方案 · 复盘当日即执行</div>
+    <h1 style="font-size:52px;">三项整改 10/26 已上线，两项排期</h1>
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:32px; margin-top:24px;">
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <div class="card">
+          <div class="card-tag orange">动作一<span class="done-badge" style="background:#fff; color:var(--safety-dark);">已上线</span></div>
+          <h3 style="font-size:22px;">高曝光零点击指南 · 标题/摘要重写</h3>
+          <p style="font-size:16px;">yellow-flame（128 曝光 · 排名 5.9）与 which-blowtorch（112 曝光 · 排名 8.4）改为答案前置式标题，如「Soldering Copper Pipe? Butane Torch Is Enough」。只动 SERP 展示层，H1 与正文不动。</p>
+        </div>
+        <div class="card">
+          <div class="card-tag orange">动作二<span class="done-badge" style="background:#fff; color:var(--safety-dark);">已上线</span></div>
+          <h3 style="font-size:22px;">指南 → 合集 · 内链传导</h3>
+          <p style="font-size:16px;">喷嘴清理指南（155 曝光）正文补 /collections/torch-nozzles/ 枢纽链接；尺寸表指南「vs welding」一节补焊接喷嘴合集链接——把指南权重导向商业页。</p>
+        </div>
+        <div class="card">
+          <div class="card-tag orange">动作三<span class="done-badge" style="background:#fff; color:var(--safety-dark);">已上线</span></div>
+          <h3 style="font-size:22px;">Superfire 2 repair kit 承接</h3>
+          <p style="font-size:16px;">备件指南新增「Is there a Superfire 2 repair kit?」章节 + FAQ（诚实口径：无全能维修包，按症状换单件），标题改含 Spares &amp; Repair Parts，llms.txt 同步。</p>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <div class="card">
+          <div class="card-tag">排期一<span class="todo-badge">待手工</span></div>
+          <h3 style="font-size:22px;">恢复 CF Web Analytics</h3>
+          <p style="font-size:16px;">10/04 起断流（孤儿 token）。需所有者在 Cloudflare 后台对 torvpro.com 关掉再打开 Web Analytics——2 分钟操作，恢复无 cookie 全量统计，补上 GA4 同意条造成的英欧盲区。</p>
+        </div>
+        <div class="card">
+          <div class="card-tag">排期二<span class="todo-badge">7–14 天后验收</span></div>
+          <h3 style="font-size:22px;">整改效果回测</h3>
+          <p style="font-size:16px;">GSC 有 2 天延迟且会回填，11 月上旬回拉：两篇重写文 CTR（基线 0，目标 28 天内 ≥2 点击）、repair kit 词簇排名（基线 39.7）。不达标则进入第二轮摘要迭代。</p>
+        </div>
+        <div class="card">
+          <div class="card-tag">排期三<span class="todo-badge">下月</span></div>
+          <h3 style="font-size:22px;">外链从 0 到 1 + 下批选题</h3>
+          <p style="font-size:16px;">备件模式已被验证（Superfire 2 词簇 16 曝光），复刻到 Sievert/Bullfinch；vs 类长尾词入选题池；外链建设启动（目录提交 + 行业社区）。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div class="section">08 / 11 · Plan</div>
+    <div class="pageno"><b>TORV</b> PRO · Retrospective</div>
+  </div>
+</div>
+</body>
+</html>

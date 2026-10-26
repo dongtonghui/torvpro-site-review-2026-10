@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>TorvPro 独立站复盘 · Brand Cover</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tokens.css">
+<script src="../shared/lock.js"></script>
+<style>
+  .brand-cover { align-items: center; text-align: center; }
+  .wordmark {
+    margin-top: 60px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 150px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .wordmark .dot { color: var(--safety); }
+  .wordmark-sub {
+    font-family: var(--font-mono);
+    font-size: 17px;
+    letter-spacing: 0.34em;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    margin-top: 14px;
+  }
+  .cover-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 92px;
+    line-height: 1.02;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+    margin-top: 54px;
+    text-transform: uppercase;
+  }
+  .cover-title .hl { color: var(--safety-dark); }
+  .cover-sub {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    margin-top: 18px;
+  }
+  .domain-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .cover-domain {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 52px;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 4px solid var(--safety);
+    padding-bottom: 4px;
+    transition: color .15s, border-color .15s;
+  }
+  .cover-domain:hover { color: var(--safety-dark); border-color: var(--safety-dark); }
+  .cover-domain .arrow {
+    font-family: var(--font-mono);
+    font-size: 26px;
+    color: var(--safety);
+    letter-spacing: 0;
+    transition: transform .15s;
+  }
+  .cover-domain:hover .arrow { transform: translate(3px, -3px); }
+  .finger { display: inline-block; transition: transform .15s; }
+  .cover-domain:hover .finger { transform: translateY(5px); }
+  .click-hint {
+    margin-top: 10px;
+    font-family: var(--font-mono);
+    font-size: 15px;
+    letter-spacing: 0.14em;
+    color: var(--safety-dark);
+    text-transform: uppercase;
+  }
+  .cover-meta {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    letter-spacing: 0.16em;
+    color: var(--ink-light);
+    text-transform: uppercase;
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="slide corner-brackets brand-cover">
+
+  <div class="wordmark">TORV<span class="dot">·</span>PRO</div>
+  <div class="wordmark-sub">Torch Spares · B2B · UK / EU</div>
+
+  <div class="cover-title">内容扛流量，<span class="hl">询盘</span>是终点</div>
+  <div class="cover-sub">TorvPro 独立站复盘 · 上线首月 2026.09.30 — 10.26</div>
+
+  <div class="domain-wrap">
+    <a class="cover-domain" href="https://torvpro.com" target="_blank">
+      <svg class="finger" viewBox="0 0 50 66" width="42" height="56" aria-hidden="true">
+        <rect x="20" y="1" width="11" height="33" rx="5.5" fill="#FF6A00"/>
+        <rect x="5" y="33" width="11" height="20" rx="5.5" fill="#E86A0A"/>
+        <rect x="20" y="33" width="11" height="20" rx="5.5" fill="#E86A0A"/>
+        <rect x="35" y="33" width="11" height="20" rx="5.5" fill="#E86A0A"/>
+        <rect x="4" y="49" width="43" height="14" rx="7" fill="#FF6A00"/>
+      </svg>
+      <span>torvpro.com</span>
+      <span class="arrow">↗</span>
+    </a>
+    <div class="click-hint">点击访问官网</div>
+  </div>
+
+  <div class="hazard-divider" style="width:380px; margin:30px auto 0;"></div>
+
+  <div class="cover-meta">Data · Git Commits + Google Search Console + GA4</div>
+</div>
+<div class="page-footer" style="left:110px; right:110px; bottom:34px;">
+  <div class="section">01 / 11 · Cover</div>
+  <div class="pageno"><b>TORV</b> PRO · Retrospective</div>
+</div>
+</body>
+</html>

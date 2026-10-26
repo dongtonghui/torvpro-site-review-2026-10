@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>04 · 搜索关键词</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tokens.css">
+<script src="../shared/lock.js"></script>
+<style>
+  .kw-table td.kw { font-family: var(--font-mono); font-size: 16px; color: var(--ink); }
+  .theme-row { display: flex; gap: 14px; margin-top: 18px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<div class="slide corner-brackets">
+  <div class="page-header">
+    <div class="brand">TORV<span class="dot">·</span>PRO</div>
+    <div class="meta">Top Search Queries</div>
+  </div>
+
+  <div style="flex:1; padding-top:26px; display:flex; flex-direction:column;">
+    <div class="kicker">02 · 搜索关键词 · 上线以来（9/30 — 10/24）· 61 个 query 有记录</div>
+    <h1 style="font-size:52px;">备件与选型词打头阵，正是站点定位</h1>
+
+    <div style="display:grid; grid-template-columns: 1.5fr 1fr; gap:36px; margin-top:20px;">
+      <!-- 关键词表 -->
+      <div>
+        <table class="data-table kw-table">
+          <tr>
+            <th>搜索关键词</th>
+            <th class="num">曝光</th>
+            <th class="num">排名</th>
+          </tr>
+          <tr class="hl"><td class="kw">rothenberger superfire 2 spares</td><td class="num">10</td><td class="num">10.7</td></tr>
+          <tr><td class="kw">brazing vs soldering</td><td class="num">9</td><td class="num">51.3</td></tr>
+          <tr><td class="kw">tradecraft aluminium brazing rods</td><td class="num">6</td><td class="num">47.8</td></tr>
+          <tr><td class="kw">yellow torches</td><td class="num">6</td><td class="num">15.3</td></tr>
+          <tr><td class="kw">brazing nozzle size chart</td><td class="num">5</td><td class="num">7.0</td></tr>
+          <tr><td class="kw">brazing nozzle sizes</td><td class="num">5</td><td class="num">6.6</td></tr>
+          <tr><td class="kw">brazing rod types</td><td class="num">5</td><td class="num">48.2</td></tr>
+          <tr><td class="kw">how to clean torch nozzle</td><td class="num">5</td><td class="num">21.6</td></tr>
+          <tr><td class="kw">nozzle seat</td><td class="num">4</td><td class="num">6.2</td></tr>
+          <tr><td class="kw">rothenberger superfire 2 not lighting</td><td class="num">3</td><td class="num">8.3</td></tr>
+          <tr><td class="kw">rothenberger superfire 2 repair kit</td><td class="num">3</td><td class="num">39.7</td></tr>
+          <tr><td class="kw">en417</td><td class="num">3</td><td class="num">8.3</td></tr>
+        </table>
+        <div class="datasrc" style="margin-top:10px;">注：GSC 隐私过滤使 query 级点击恒为 0，点击数以页面维度为准；曝光即为需求信号。</div>
+      </div>
+
+      <!-- 主题归纳 -->
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <div class="card">
+          <div class="card-tag orange">主题归纳</div>
+          <h3 style="font-size:23px;">四大需求簇</h3>
+          <div class="theme-row">
+            <span class="tag orange">品牌备件</span>
+            <span class="tag">喷嘴选型</span>
+            <span class="tag">焊条选购</span>
+            <span class="tag">维修保养</span>
+          </div>
+          <p style="font-size:16px; margin-top:14px;">Superfire 2 词簇（spares / not lighting / repair kit）≈16 曝光，全是带购买意图的备件需求——选品判断被搜索数据验证；喷嘴尺寸词（chart / sizes / seat）≈14 曝光已进首页。</p>
+        </div>
+        <div class="card">
+          <div class="card-tag">洞察</div>
+          <h3 style="font-size:23px;">两类词，两种打法</h3>
+          <p style="font-size:16px;">首页词（pos 6-11，备件/尺寸类）：摘要与承接决定 CTR，10/26 已整改。长尾对比词（vs 类 pos 40-55）：是内容深度与外链问题，短期不动，记入下批选题池。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div class="section">04 / 11 · Queries</div>
+    <div class="pageno"><b>TORV</b> PRO · Retrospective</div>
+  </div>
+</div>
+</body>
+</html>
